@@ -7,3 +7,9 @@ steps:
         'gcr.io/frdemo2/fr-test-demo2:$SHORT_SHA',
         '.',
       ]
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'push',
+        'gcr.io/cloud-run-cd-example/cloud-run-continuous-deployment-example:$SHORT_SHA',
+      ]

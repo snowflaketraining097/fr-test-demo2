@@ -11,5 +11,5 @@ steps:
     args:
       [
         'push',
-        'gcr.io/cloud-run-cd-example/cloud-run-continuous-deployment-example:$SHORT_SHA',
+        'gcr.io/frdemo2/fr-test-demo2:$SHORT_SHA',
       ]

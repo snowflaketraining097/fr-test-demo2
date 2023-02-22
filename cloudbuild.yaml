@@ -18,8 +18,9 @@ steps:
       [
         'run',
         'deploy',
-        'fr-test-demo2',
-        '--image=gcr.io/frdemo2/fr-test-demo2:$SHORT_SHA',
-        '--region=us-central1',
+        'cloud-run-continuous-deployment-example',
+	      '--platform=managed',
+        '--image=gcr.io/cloud-run-cd-example/cloud-run-continuous-deployment-example:$SHORT_SHA',
+        '--region=us-central1'
       ]
 

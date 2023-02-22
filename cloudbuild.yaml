@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      [
+        'build',
+        '-t',
+        'gcr.io/frdemo2/fr-test-demo2:$SHORT_SHA',
+        '.',
+      ]
